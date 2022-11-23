@@ -10,6 +10,9 @@ namespace AdapterPattern
     {
         /// <summary>
         /// Client's method that need to be ADAPTED
+        /// For this example its parameter is an int called clientDS,
+        /// (which stands for clientDataStructure) however can be anytype or object
+        /// It can returns any type.
         /// </summary>
         /// <returns></returns>
         public void clientMethod(int clientDS);

@@ -17,6 +17,9 @@ namespace AdapterPattern
 
         /// <summary>
         /// Client's method is ADAPTED to use ADAPTEE method
+        /// For this example its parameter is an "int" called clientDS,
+        /// (which stands for clientDataStructure) however can be anytype or object
+        /// It can returns any type.
         /// </summary>
         /// <param name="clientDS"></param>
         public void clientMethod(int clientDS)
@@ -25,7 +28,8 @@ namespace AdapterPattern
         }
 
         /// <summary>
-        /// This CONVERTS the CLIENT interface to something that the ADAPTEE can understand.
+        /// CONVERTS clientDS to adapteeDS.
+        /// So, It shall returns adapteeDS type!!!.
         /// </summary>
         /// <param name="clientVariable"></param>
         /// <returns></returns>
