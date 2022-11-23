@@ -87,7 +87,7 @@ Status:
 ![UMLdiagram](/uploads/StructuralDP-Adapter.png)
 - Purpose: 
   - Provides communication between two existing classes (`ClientClass` and `AdapteeClass`) by providing a compatible interface `TargetInterface`.
-  - This happens then a pre-existing software (`ClientClass`) needs to use third-party libraries (`AdapteeClass`) or needs to connect to a external sw/hw.
+  - When a pre-existing software (`ClientClass`) needs to use third-party libraries (`AdapteeClass`) or needs to connect to a external sw/hw.
 - Parts:
   - `ClientClass`: Class which is part of your software and wants to use third-party libraries or external sw/hw.
   - `AdapteeClass`: This is the third-party class or external sw/hw.
