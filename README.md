@@ -52,7 +52,7 @@ Status:
 5. Singleton 
    
 ###  1.2. <a name='StructuralPatterns'></a>Structural Patterns
-1. Adapter (`Available`)
+1. [Adapter](/README.md#31-adapter) (`Available`)
 2. Bridge 
 3. Composite 
 4. Decorator 
