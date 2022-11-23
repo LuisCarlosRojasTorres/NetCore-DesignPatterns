@@ -8,5 +8,16 @@ namespace AdapterPattern
 {
     internal class Client
     {
+        TargetInterface adapterInstance;
+
+        public Client(Adapter adapterInstance)
+        {
+            this.adapterInstance = adapterInstance;
+        }
+
+        public void ClientFunctionality(int clientVariable) 
+        {
+            adapterInstance.clientMethod(clientVariable);
+        }
     }
 }
