@@ -38,40 +38,40 @@
 A repository of Design Pattern templates 
 
 Status:
-- (`In Progress`)
+- (In Progress)
 - (`Available`)
-- (`Not Available`)
+- (Not Available)
 
 ##  1. <a name='ListofDesignPatterns'></a>List of Design Patterns
 
 ###  1.1. <a name='CreationalPatterns'></a>Creational Patterns
-1. Abstract Factory (`Not Available`)
-2. Builder (`Not Available`)
-3. Factory Method (`Not Available`)
-4. Prototype (`Not Available`)
-5. Singleton (`Not Available`)
+1. Abstract Factory 
+2. Builder 
+3. Factory Method 
+4. Prototype 
+5. Singleton 
    
 ###  1.2. <a name='StructuralPatterns'></a>Structural Patterns
 1. Adapter (`Available`)
-2. Bridge (`Not Available`)
-3. Composite (`Not Available`)
-4. Decorator (`Not Available`)
-5. Façade (`Not Available`)
-6. Flywight (`Not Available`)
-7. Proxy (`Not Available`)
+2. Bridge 
+3. Composite 
+4. Decorator 
+5. Façade 
+6. Flywight 
+7. Proxy 
 
 ###  1.3. <a name='BehaviouralPatterns'></a>Behavioural Patterns
-1. Chain of Responsability (`Not Available`)
-2. Command (`Not Available`)
-3. Interpreter (`Not Available`)
-4. Iterator (`Not Available`)
-5. Mediator (`Not Available`)
-6. Memento (`Not Available`)
-7. Observer (`Not Available`)
-8. State (`Not Available`)
-9. Strategy (`Not Available`)
-10. Template method (`Not Available`)
-11. Visitor (`Not Available`)
+1. Chain of Responsability 
+2. Command 
+3. Interpreter 
+4. Iterator 
+5. Mediator 
+6. Memento 
+7. Observer 
+8. State 
+9. Strategy 
+10. Template method 
+11. Visitor 
 
 ##  2. <a name='CreationalPatterns-1'></a>Creational Patterns
 
