@@ -10,7 +10,7 @@ namespace AdapterPattern
     {
         TargetInterface adapterInstance;
 
-        public Client(Adapter adapterInstance)
+        public Client(TargetInterface adapterInstance)
         {
             this.adapterInstance = adapterInstance;
         }

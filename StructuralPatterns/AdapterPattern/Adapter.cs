@@ -18,10 +18,10 @@ namespace AdapterPattern
         /// <summary>
         /// Client's method is ADAPTED to use ADAPTEE method
         /// </summary>
-        /// <param name="clientVariable"></param>
-        public void clientMethod(int clientVariable)
+        /// <param name="clientDS"></param>
+        public void clientMethod(int clientDS)
         {
-            adapteeInstance.adapteeMethod(ClientToAdapteeVariableConversor(clientVariable));            
+            adapteeInstance.adapteeMethod(ClientToAdapteeDSConversor(clientDS));            
         }
 
         /// <summary>
@@ -29,9 +29,9 @@ namespace AdapterPattern
         /// </summary>
         /// <param name="clientVariable"></param>
         /// <returns></returns>
-        private bool ClientToAdapteeVariableConversor(int clientVariable) 
+        private bool ClientToAdapteeDSConversor(int clientDS) 
         {
-            if (clientVariable != 0)
+            if (clientDS != 0)
             {
                 return true;
             }
