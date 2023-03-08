@@ -124,10 +124,19 @@ Status:
 - LINK: [Here]()
   
 ###  3.5. <a name='Faade'></a>Façade
-![UMLdiagram]()
+![UMLdiagram](/uploads/StructuralDP-Facade.png)
 - Purpose:
+  - Provides a single, simplified `interface` for `ClientClasses` to interact with a subsystem.  
+  - If there is a need for a class to instantiate other classes within your system and to provide these instances to another class.
 - Parts:  
+  - `FaçadeClass`: 
+    - It is a wrapper classs that encapsulates a subsystem and hides its complexity.
+    - It allows the `ClientClass` to interact with the subsystem though a `façade`.
 - Steps:
+  - Design the `interface`
+  - Implement the `interface` with one or more classes
+  - Create the `FaçadeClass` and wrap the classes that implement the `interface`
+  - Use the `FaçadeClass` to access the subsystem.
 - LINK: [Here]()
 ###  3.6. <a name='Flywight'></a>Flywight
 ![UMLdiagram]()
