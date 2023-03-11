@@ -9,6 +9,9 @@ Status:
 ##  1. <a name='ListofDesignPatterns'></a>List of Design Patterns
 
 ###  1.1. <a name='CreationalPatterns'></a>Creational Patterns
+Creational Patterns:
+- Handle the creation or clonning of new objects.
+
 1. Abstract Factory 
 2. Builder 
 3. Factory Method 
@@ -16,15 +19,30 @@ Status:
 5. Singleton 
    
 ###  1.2. <a name='StructuralPatterns'></a>Structural Patterns
+Structural Patterns:
+- Describes:
+  -  how objects are connected to each other 
+  -  how subcclasses and baseclasses interact through `inheritance.`  
+- Relates to the design principles of `decomposition` and `generalization`.
+
+So, a **Structural Pattern describes how classes should work to achieve a particular design goal**. (like ingredient in a food to achieve a specific flavor)
+
 1. [Adapter](/README.md#31-adapter) (`Available`)
 2. Bridge 
 3. Composite 
 4. Decorator 
-5. Façade 
+5. [Façade](/README.md#35-façade) (`Available`)
 6. Flywight 
 7. Proxy 
 
 ###  1.3. <a name='BehaviouralPatterns'></a>Behavioural Patterns
+Behavioral Patterns:
+- Focus on How objects distribute work
+- Describe how each object does a single cohesive function
+- also Focus on How independent objects work towards a common goal.
+
+So, a **a Behavioral Pattern lays out the overall goal and purpose for each object**. (like a racing car pit crew in a track)
+
 1. Chain of Responsability 
 2. Command 
 3. Interpreter 
@@ -63,7 +81,7 @@ Status:
   - Design the `TargetInterface`
   - Implements the `AdapterClass`
   - Send the request from the `ClientClass` to the `AdapterClass` using the `TargetInterface` 
-- LINK: [Here](https://github.com/LuisCarlosRojasTorres/NetCore-DesignPatterns/tree/main/StructuralPatterns/AdapterPattern)
+- LINK to Repository Project: [Here](https://github.com/LuisCarlosRojasTorres/NetCore-DesignPatterns/tree/main/StructuralPatterns/AdapterPattern)
   
 ###  3.2. <a name='Bridge'></a>Bridge
 ![UMLdiagram]()
@@ -92,16 +110,20 @@ Status:
 - Purpose:
   - Provides a single, simplified `interface` for `ClientClasses` to interact with a subsystem.  
   - If there is a need for a class to instantiate other classes within your system and to provide these instances to another class.
-- Parts:  
+- Parts:
+  - `ICommonFunctionalities`  : defines the methods which are common to all the classes to be refactored/created.
   - `FaçadeClass`: 
-    - It is a wrapper classs that encapsulates a subsystem and hides its complexity.
+    - It is a wrapper class that encapsulates a subsystem and hides its complexity.
+      - It uses `aggregation`.
     - It allows the `ClientClass` to interact with the subsystem though a `façade`.
+  - `ClientClass`: Calls the methods defined in `ICommonFunctionalities` and implemented in the different `Class1`, `Class2` and `CSlass3` using only the `FaçadeClass`
 - Steps:
-  - Design the `interface`
+  - Design the `interface` extracting common methods to be used by the `ClientClass`
   - Implement the `interface` with one or more classes
   - Create the `FaçadeClass` and wrap the classes that implement the `interface`
   - Use the `FaçadeClass` to access the subsystem.
-- LINK: [Here]()
+  - Implement the `ClientClass` to call the methods of the subsystem through the `FaçadeClass`.
+- LINK to Repository Project: [Here](https://github.com/LuisCarlosRojasTorres/NetCore-DesignPatterns/tree/main/StructuralPatterns/FacadePattern)
 ###  3.6. <a name='Flywight'></a>Flywight
 ![UMLdiagram]()
 - Purpose:
