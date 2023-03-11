@@ -1,40 +1,4 @@
-<!-- vscode-markdown-toc -->
-* 1. [List of Design Patterns](#ListofDesignPatterns)
-	* 1.1. [Creational Patterns](#CreationalPatterns)
-	* 1.2. [Structural Patterns](#StructuralPatterns)
-	* 1.3. [Behavioural Patterns](#BehaviouralPatterns)
-* 2. [Creational Patterns](#CreationalPatterns-1)
-	* 2.1. [Abstract Factory](#AbstractFactory)
-	* 2.2. [Builder](#Builder)
-	* 2.3. [Factory Method](#FactoryMethod)
-	* 2.4. [Prototype](#Prototype)
-	* 2.5. [Singleton](#Singleton)
-* 3. [Structural Patterns](#StructuralPatterns-1)
-	* 3.1. [Adapter](#Adapter)
-	* 3.2. [Bridge](#Bridge)
-	* 3.3. [Composite](#Composite)
-	* 3.4. [Decorator](#Decorator)
-	* 3.5. [Façade](#Faade)
-	* 3.6. [Flywight](#Flywight)
-	* 3.7. [Proxy](#Proxy)
-* 4. [Behavioral Patterns](#BehavioralPatterns)
-	* 4.1. [Chain of Responsability](#ChainofResponsability)
-	* 4.2. [Command](#Command)
-	* 4.3. [Interpreter](#Interpreter)
-	* 4.4. [Iterator](#Iterator)
-	* 4.5. [Mediator](#Mediator)
-	* 4.6. [Memento](#Memento)
-	* 4.7. [Observer](#Observer)
-	* 4.8. [State](#State)
-	* 4.9. [Strategy](#Strategy)
-	* 4.10. [Template method](#Templatemethod)
-	* 4.11. [Visitor](#Visitor)
-
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc --># NetCore-DesignPatterns
+# NetCore-DesignPatterns
 A repository of Design Pattern templates 
 
 Status:

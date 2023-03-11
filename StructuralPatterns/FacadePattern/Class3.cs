@@ -11,11 +11,17 @@ namespace FacadePattern
     {
         public Class3() { }
 
+        /// <summary>
+        /// Method implemented from ICommonFunctionalities
+        /// </summary>
         public void execute1()
         {
             Console.WriteLine("Hi i am Class3 type - This is my execute1()");
         }
 
+        /// <summary>
+        /// Method implemented from ICommonFunctionalities
+        /// </summary>
         public void execute2()
         {
             Console.WriteLine("Hi i am Class3 type - This is my execute2()");
