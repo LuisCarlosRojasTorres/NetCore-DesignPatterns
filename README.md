@@ -197,7 +197,7 @@ So, a **a Behavioral Pattern lays out the overall goal and purpose for each obje
 - LINK: [Here]()
 
 ###  4.9. <a name='Strategy'></a>Strategy
-![UMLdiagram]()
+![UMLdiagram](/uploads/BehavioralDP-Strategy.png)
 - Purpose:
 - Parts:  
 - Steps:
