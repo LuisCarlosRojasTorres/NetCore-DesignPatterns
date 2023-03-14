@@ -198,8 +198,26 @@ So, a **a Behavioral Pattern lays out the overall goal and purpose for each obje
 
 ###  4.9. <a name='Strategy'></a>Strategy
 ![UMLdiagram](/uploads/BehavioralDP-Strategy.png)
-- Purpose:
-- Parts:  
+- Purpose: 
+  - To define a family of encapsulated and interchangeable algorithms, i.e. they are `client` independent. Each algorithm is called of `strategy`.
+  - to use different variants of an algorithm within an object and be able to switch from one algorithm to another during runtime .
+  - to isolate the business logic of a class from the implementation details of algorithms that may not be as important in the context of that logic
+  - To replace an humongous, general and plenty-of-conditionals main algorithm.
+- Parts:
+  - `ContextClass`  
+    - It has a reference to a `Strategy` object 
+      -  It calls the `Strategy` methods through the interface
+   - It has a setter to change the `strategy` object at runtime
+    -  It does not know 
+       -  what type of strategy it works with
+       -  how the algorithm is executed
+  - `IStrategy`: 
+    - It defines a common `interface` for all the algorithms.
+    - It is used by the `ContextClass` to call a `ConcreteStrategy`
+  - `ConcreteStrategy1`, ... `ConcreteStrategyN`: Implements an algorithm using the `IStrategy` interface.
+  - `ClientClass`:
+    - Creates the strategy object and passes it to the `ContextClass`
+    - It can change the `Strategy` object of the context class at runtime.
 - Steps:
 - LINK: [Here]()
 
