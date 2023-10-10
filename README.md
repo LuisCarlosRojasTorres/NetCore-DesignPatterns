@@ -50,7 +50,7 @@ So, a **a Behavioral Pattern lays out the overall goal and purpose for each obje
 5. Mediator 
 6. Memento 
 7. Observer 
-8. State 
+8. [State] 
 9. Strategy 
 10. Template method 
 11. Visitor 
@@ -191,7 +191,13 @@ So, a **a Behavioral Pattern lays out the overall goal and purpose for each obje
 
 ###  4.8. <a name='State'></a>State 
 ![UMLdiagram]()
-- Purpose:
+- Purpose: A Finite State Machine on steroids.
+   - Finite State Machine:
+      - A class with an `enum` which represents the `states`
+      - The constructor will set the initial state.
+      - A main function has a while loop which call different methods according to the current object state.
+      - Each `state` has a method associated. The output of this methods will change the state to another one.  
+      - LINK to FSM Repository Project: [Here]()
 - Parts:  
 - Steps:
 - LINK: [Here]()
